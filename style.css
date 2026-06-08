@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Comic Neue', cursive;
+}
+
+body{
+    overflow:hidden;
+}
+
+#game{
+    width:100vw;
+    height:100vh;
+
+    background-image:url("fondo.jpg");
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+    overflow:hidden;
+}
+
+#menu{
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:999;
+}
+
+#playBtn{
+    padding:20px 50px;
+    font-size:35px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+#duck{
+    width:150px;
+    height:auto;
+
+    position:absolute;
+    bottom:20px;
+    left:50%;
+}
+
+.item{
+    width:90px;
+    height:auto;
+    position:absolute;
+}
+
+#score{
+    position:absolute;
+    top:15px;
+    left:15px;
+
+    color:white;
+    font-size:35px;
+
+    text-shadow:3px 3px 8px black;
+}
+
+#gameOver{
+    display:none;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    color:white;
+
+    text-align:center;
+
+    text-shadow:4px 4px 10px black;
+}
+
+#gameOver h1{
+    font-size:70px;
+}
+
+#gameOver p{
+    font-size:30px;
+}
+
+#vidas{
+    position:absolute;
+    top:60px;
+    left:15px;
+
+    color:white;
+    font-size:30px;
+
+    text-shadow:3px 3px 8px black;
+}
